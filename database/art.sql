@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2022 at 07:41 PM
+-- Generation Time: Oct 26, 2022 at 06:00 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -32,20 +32,21 @@ CREATE TABLE `illustartion` (
   `files_img` varchar(225) NOT NULL,
   `title` varchar(50) NOT NULL,
   `artist` varchar(50) NOT NULL,
-  `software` varchar(40) NOT NULL
+  `software` varchar(40) NOT NULL,
+  `dates` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `illustartion`
 --
 
-INSERT INTO `illustartion` (`id`, `files_img`, `title`, `artist`, `software`) VALUES
-(1, 'simple.png', 'Elegant', 'Andi Ari', 'Medibang Paint'),
-(3, 'butterfly.jpg', 'Butterfily', 'Andiarivan3', 'IbisPaintX'),
-(4, 'boring.jpg', 'Boring', 'Andiarivan3', 'IbisPaintX'),
-(5, 'space.jpg', 'Astronout', 'Andiarivan3', 'IbisPaintX'),
-(6, 'darth-vader-fanart-4k-3h-1366x768.jpg', 'Dart Vader', 'Unknown', 'Illustrator'),
-(7, 'mono.jpg', 'Mono', 'Andiarivan3', 'IbisPaintX');
+INSERT INTO `illustartion` (`id`, `files_img`, `title`, `artist`, `software`, `dates`) VALUES
+(9, 'simple.png', 'Black Sweather', 'AndiAri', 'Medibang', '26-10-2022 11:01:00pm'),
+(10, 'mono.jpg', 'Monochrome', 'AndiAri', 'IbisPaintX', '26-10-2022 11:06:56pm'),
+(11, 'butterfly.jpg', 'Butterfly', 'AndiAri', 'IbisPaintX', '26-10-2022 11:08:44pm'),
+(12, 'darth-vader-fanart-4k-3h-1366x768.jpg', 'Darth Vader', 'Unknown', 'AI', '26-10-2022 11:10:58pm'),
+(13, 'arlecchino.jpg', 'Arlecchino Genshin Impact', 'AndiAri', 'IbisPaintX', '26-10-2022 11:12:50pm'),
+(14, 'boring.jpg', 'Boring', 'AndiAri', 'IbisPaintX', '26-10-2022 11:15:35pm');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +66,7 @@ ALTER TABLE `illustartion`
 -- AUTO_INCREMENT for table `illustartion`
 --
 ALTER TABLE `illustartion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
